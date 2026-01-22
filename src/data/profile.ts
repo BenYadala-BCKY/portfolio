@@ -1,6 +1,6 @@
 export const profile = {
   name: "Ben Yadala",
-  headline: "Data Engineer | Python, SQL, AWS | Airflow, Pipelines, Automation",
+  headline: "Data Engineer, Python, SQL, AWS, Airflow, data pipelines, automation",
   location: "United States",
   links: {
     linkedin: "https://www.linkedin.com/in/your-link",
