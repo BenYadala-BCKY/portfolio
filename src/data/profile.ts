@@ -9,7 +9,7 @@ export const profile = {
     resume: "/resume.pdf",
   },
   summary:
-    "I build reliable data pipelines and automation systems, focused on clean data, clear metrics, and production-minded execution.",
+    "Data engineer with hands-on experience building reliable ETL pipelines, automation workflows, and analytics systems using Python, SQL, and AWS. Focused on production-ready execution and measurable impact.",
   highlights: [
     "Certificate of Outstanding Performance, Sports Media Inc.",
     "Airflow and AWS ETL experience from Cognizant",
