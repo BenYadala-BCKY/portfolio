@@ -1,11 +1,11 @@
 export const profile = {
-  name: "Ben Yadala",
+  name: "Ben Clement Kishore Yadala",
   headline: "Data Engineer, Python, SQL, AWS, Airflow, data pipelines, automation",
   location: "United States",
   links: {
-    linkedin: "https://www.linkedin.com/in/your-link",
-    github: "https://github.com/your-username",
-    email: "mailto:your-email@example.com",
+    linkedin: "https://www.linkedin.com/in/benyadala",
+    github: "https://github.com/BenYadala-BCKY",
+    email: "mailto:benjaminyadala.com",
     resume: "/resume.pdf",
   },
   summary:
