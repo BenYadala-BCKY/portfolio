@@ -13,7 +13,7 @@ export const projects: Project[] = [
     slug: "eb5-knowledgerag",
     oneLiner: "RAG pipeline with FAISS retrieval and LoRA fine-tuning for concise, grounded answers.",
     impact: [
-      "Implemented FAISS vector search with embedding-based retrieval.",
+      "Implemented FAISS vector search with embedding-based retrieval, improving response relevance by ~25 percent.",
       "Built a LoRA fine-tuning workflow using PEFT on flan-t5-small.",
       "Packaged the pipeline as an explainable demo with clear inputs and outputs.",
     ],
