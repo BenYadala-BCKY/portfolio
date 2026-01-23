@@ -32,28 +32,46 @@ const featured = projects.slice(0, 3);
         </p>
 
         <div class="mt-6 flex flex-wrap gap-3">
-          <a class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400" href={profile.links.linkedin} target="_blank">LinkedIn</a>
-          <a class="rounded-lg border px-4 py-2 text-sm hover:bg-neutral-100" href={profile.links.github} target="_blank">GitHub</a>
-          <a class="rounded-lg border px-4 py-2 text-sm hover:bg-neutral-100" href={profile.links.resume} target="_blank">Resume</a>
-          <a class="rounded-lg border px-4 py-2 text-sm hover:bg-neutral-100" href={profile.links.email}>Email</a>
+          <a class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400" href={profile.links.linkedin} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a class="rounded-lg border bg-white px-4 py-2 text-sm hover:bg-neutral-100" href={profile.links.github} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a class="rounded-lg border bg-white px-4 py-2 text-sm hover:bg-neutral-100" href={profile.links.resume} target="_blank" rel="noreferrer">
+            Resume
+          </a>
+          <a class="rounded-lg border bg-white px-4 py-2 text-sm hover:bg-neutral-100" href={profile.links.email}>
+            Email
+          </a>
+          <a class="rounded-lg border bg-white px-4 py-2 text-sm hover:bg-neutral-100" href="/projects">
+            Projects
+          </a>
         </div>
 
-        <ul class="mt-6 list-disc space-y-1 pl-5 text-neutral-700">
-          {profile.highlights.map((h) => <li>{h}</li>)}
+        <ul class="mt-8 grid gap-3 md:grid-cols-3">
+          {profile.highlights.map((h) => (
+            <li class="rounded-xl bg-neutral-50 p-4 text-sm text-neutral-700">
+              {h}
+            </li>
+          ))}
         </ul>
       </section>
 
       <section class="mt-12">
-        <h2 class="text-2xl font-semibold text-indigo-900">Featured projects</h2>
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-2xl font-semibold text-indigo-900">Featured projects</h2>
+          <a class="text-sm text-neutral-600 hover:underline" href="/projects">View all</a>
+        </div>
 
-        <div class="mt-6 grid gap-6">
+        <div class="mt-6 grid gap-6 md:grid-cols-2">
           {featured.map((p) => (
-            <a href={`/projects#${p.slug}`} class="block rounded-2xl bg-white p-6 shadow-sm ring-1 ring-indigo-100 transition hover:-translate-y-1 hover:shadow-md hover:ring-indigo-300">
+            <a href={`/projects/${p.slug}`} class="block rounded-2xl bg-white p-6 shadow-sm ring-1 ring-indigo-100 transition hover:-translate-y-1 hover:shadow-md hover:ring-indigo-300">
               <h3 class="text-lg font-semibold">{p.title}</h3>
               <p class="mt-2 text-neutral-600">{p.oneLiner}</p>
 
               <div class="mt-4 flex flex-wrap gap-2">
-                {p.stack.slice(0, 6).map((s) => (
+                {p.stack.slice(0, 7).map((s) => (
                   <span class="rounded-full bg-indigo-50 px-3 py-1 text-xs text-indigo-900 ring-1 ring-indigo-100">
                     {s}
                   </span>
@@ -65,7 +83,7 @@ const featured = projects.slice(0, 3);
       </section>
 
       <section class="mt-12">
-        <h2 class="text-2xl font-semibold">Core skills</h2>
+        <h2 class="text-2xl font-semibold text-indigo-900">Core skills</h2>
         <div class="mt-4 flex flex-wrap gap-2">
           {profile.skills.map((s) => (
             <span class="rounded-full bg-white px-4 py-2 text-sm shadow-sm ring-1 ring-indigo-100">
@@ -80,5 +98,4 @@ const featured = projects.slice(0, 3);
       </footer>
     </main>
   </body>
-
 </html>

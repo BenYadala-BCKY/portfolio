@@ -1,6 +1,6 @@
 ---
-import "../styles/global.css";
-import { projects } from "../data/projects";
+import "../../styles/global.css";
+import { projects } from "../../data/projects";
 ---
 
 <html lang="en">
@@ -17,6 +17,10 @@ import { projects } from "../data/projects";
       <h1 class="mt-4 text-3xl font-bold">Projects</h1>
       <p class="mt-2 text-neutral-600">
         Selected work across data engineering, automation, and applied AI.
+      </p>
+
+      <p class="mt-4 text-sm text-neutral-500">
+        Total projects: {projects.length}
       </p>
 
       <div class="mt-8 grid gap-6">
@@ -36,6 +40,13 @@ import { projects } from "../data/projects";
                 </span>
               ))}
             </div>
+
+            <a
+              href={`/projects/${p.slug}`}
+              class="mt-4 inline-block text-sm font-medium text-indigo-700 hover:underline"
+            >
+              View details
+            </a>
           </section>
         ))}
       </div>
