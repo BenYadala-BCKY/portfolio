@@ -1,6 +1,6 @@
 export const profile = {
   name: "Ben Clement Kishore Yadala",
-  headline: "Data Engineer, Python, SQL, AWS, Airflow, data pipelines, automation",
+  headline: "Data Engineer turning ambiguous data problems into reliable, production-ready systems",
   location: "United States",
   links: {
     linkedin: "https://www.linkedin.com/in/benyadala",
@@ -9,21 +9,27 @@ export const profile = {
     resume: "/resume.pdf",
   },
   summary:
-    "Data engineer with hands-on experience building reliable ETL pipelines, automation workflows, and analytics systems using Python, SQL, and AWS. Focused on production-ready execution and measurable impact.",
+  "Hands-on data engineer with experience designing, building, and maintaining reliable data pipelines, automation workflows, and analytics systems. Strong at translating ambiguous requirements into clean, production-ready solutions, with a focus on data quality, scalability, and real-world impact.",
   highlights: [
-    "Certificate of Outstanding Performance, Sports Media Inc.",
-    "Airflow and AWS ETL experience from Cognizant",
-    "Applied AI projects including RAG and sentiment analysis",
+    "Recognized with an Outstanding Performance Award at Sports Media Inc. for owning and delivering data automation initiatives with measurable impact.",
+    "Designed and maintained production-grade data pipelines and workflows, ensuring data reliability and consistency across analytics use cases.",
+    "Built applied AI and NLP pipelines, including RAG-based systems and sentiment analysis, focused on practical deployment rather than research prototypes.",
   ],
+
   skills: [
     "Python",
     "SQL",
+    "Data Pipelines",
+    "ETL and ELT",
+    "Workflow Orchestration",
     "Airflow",
     "AWS (S3, Redshift, Glue)",
-    "ETL and ELT",
-    "Data modeling",
+    "Data Modeling",
     "Automation",
-    "Analytics and reporting",
-    "LLM pipelines (RAG)",
+    "Analytics and Reporting",
+    "NLP",
+    "Transformers",
+    "Retrieval-Augmented Generation (RAG)",
+    "Vector Search (FAISS)",
   ],
 };
