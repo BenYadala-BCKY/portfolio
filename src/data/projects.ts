@@ -16,42 +16,51 @@ export const projects: Project[] = [
     slug: "eb5-knowledgerag",
     oneLiner: "RAG pipeline with FAISS retrieval and LoRA fine-tuning for concise, grounded answers.",
     impact: [
-      "Implemented FAISS vector search with embedding-based retrieval, improving response relevance by ~25 percent.",
-      "Built a LoRA fine-tuning workflow using PEFT on flan-t5-small.",
-      "Packaged the pipeline as an explainable demo with clear inputs and outputs.",
+      "Designed an end-to-end RAG pipeline with document chunking, embedding generation, and FAISS-based vector retrieval.",
+      "Integrated retrieval results into prompt construction to constrain generation and reduce hallucinations.",
+      "Applied LoRA fine-tuning using PEFT to adapt a lightweight language model to domain-specific query patterns.",
+      "Packaged the system as an explainable demo with clear inputs, retrieved context, and generated outputs.",
     ],
     stack: ["Python", "FAISS", "Hugging Face", "PEFT", "Sentence-Transformers", "Pandas"],
     links: [{ label: "GitHub", href: "https://github.com/BenYadala-BCKY/EB5_KnowledgeRAG.git" }],
+    overview:
+      "Built to explore practical RAG design trade-offs, focusing on controllability, explainability, and deployment-friendly model sizes rather than raw benchmark scores.",
   },
   {
     title: "Trump Gold Card, EB-5 Investor Segmentation Report",
     slug: "gold-card-report",
-    oneLiner: "Executive one-pager summarizing investor personas and regional opportunities using verified datasets.",
+    oneLiner: "Executive-style analysis summarizing EB-5 investor personas, regional demand patterns, and behavioral drivers.",
     impact: [
-      "Synthesized market and public datasets into an executive narrative.",
-      "Created persona mapping and regional opportunity indexing for leadership decisions.",
+      "Synthesized publicly available and licensed datasets into a concise, decision-oriented narrative.",
+      "Segmented investors by geography, motivation, and investment behavior to support strategic planning.",
+      "Translated analytical findings into a one-page executive report with clear visuals and takeaways.",
     ],
     stack: ["Analytics", "Reporting", "Canva", "Stakeholder Communication"],
+    overview:
+      "Emphasized clarity, interpretability, and decision relevance over model complexity, mirroring real stakeholder-facing analytics work.",
   },
   {
     title: "Fan Sentiment Analysis",
     slug: "fan-sentiment-analysis",
-    oneLiner: "NLP pipeline to analyze fan emotion trends and summarize key themes across teams and games.",
+    oneLiner: "NLP pipeline for extracting sentiment trends and recurring themes from large volumes of fan-generated text.",
     impact: [
-      "Cleaned and processed text data to generate sentiment signals and themes.",
-      "Created a repeatable analysis flow suitable for weekly reporting.",
-      "Summarized insights so they can feed dashboards or stakeholder updates.",
+      "Built a text processing pipeline to clean, normalize, and tokenize fan-generated content.",
+      "Applied sentiment analysis and keyword-based theme extraction to identify recurring discussion patterns.",
+      "Structured outputs to support downstream dashboards, reports, and recurring analytics workflows.",
     ],
     stack: ["Python", "NLP", "Text processing", "Visualization"],
+    overview:
+      "Focused on turning unstructured fan feedback into repeatable analytical signals suitable for weekly reporting and stakeholder consumption.",
   },
   {
     title: "Road Damage Detection with YOLOv8 (RDD2022)",
-    slug: "yolov8-road-damage-detection",
-    oneLiner: "Object detection pipeline to identify road damage classes using YOLOv8, optimized for accuracy and faster training.",
+    slug: "YOLOv8-road-damage-detection",
+    oneLiner: "Computer vision pipeline for detecting and classifying road damage using YOLOv8.",
     impact: [
-      "Trained and evaluated a YOLOv8 object detector on the RDD2022 dataset for road damage classification.",
-      "Improved detection performance through dataset preparation, augmentation, and hyperparameter tuning.",
-      "Documented an end-to-end workflow from labeling format, training runs, and inference to results review.",
+      "Prepared and validated the RDD2022 dataset for object detection training.",
+      "Trained a YOLOv8 model and iterated on augmentation and hyperparameters to stabilize learning.",
+      "Evaluated detection outputs qualitatively and quantitatively to assess model behavior.",
+      "Documented an end-to-end workflow covering training, inference, and result inspection.",
     ],
     stack: [
       "Python",
@@ -65,7 +74,7 @@ export const projects: Project[] = [
     links: [{ label: "GitHub", href: "https://github.com/BenYadala-BCKY/YoloV8-Road-Damage-Detection.git" }],
     // Optional, start light now, expand later
     overview:
-      "Built an end-to-end object detection workflow to detect and classify road damage types using YOLOv8, with a focus on practical training speed and usable inference outputs.",
+      "Implemented as a practical exploration of modern object detection workflows rather than a benchmark-chasing exercise.",
     visuals: [
       // Add once you place images in public/images/yolov8-road-damage-detection/
       // { label: "Training metrics", src: "/images/yolov8-road-damage-detection/training.png", alt: "YOLOv8 training curves" },
@@ -75,11 +84,12 @@ export const projects: Project[] = [
   {
     title: "Intelligent Agents and Decision Making (AI 533) RL Comparison",
     slug: "iadm-reinforcement-learning-comparison",
-    oneLiner: "Implemented and compared tabular SARSA, Q-learning, SARSA(λ), and Actor-Critic, including grid search hyperparameter tuning and reward analysis.",
+    oneLiner: "Comparative study of reinforcement learning algorithms in a stochastic gridworld environment.",
     impact: [
-      "Implemented tabular SARSA, Q-learning, and SARSA(λ) with epsilon-greedy action selection and automated grid search over alpha and epsilon values.",
-      "Implemented an Actor-Critic agent with linear function approximation and compared mean reward performance across methods.",
-      "Reported learning curves and a final comparison showing Actor-Critic achieving the highest mean reward in the stochastic gridworld experiments.",
+      "Implemented tabular SARSA, Q-learning, and SARSA(λ) with epsilon-greedy exploration.",
+      "Implemented an Actor-Critic agent using linear function approximation.",
+      "Conducted systematic hyperparameter tuning and analyzed learning curves across agents.",
+      "Compared stability, convergence behavior, and reward trends across methods.",
     ],
     stack: [
       "Python",
@@ -98,7 +108,7 @@ export const projects: Project[] = [
       // { label: "Report (PDF)", href: "/docs/iadm-mp2.pdf" },
     ],
     overview:
-      "Built a small RL benchmark study by implementing multiple agents and comparing their learning dynamics and final rewards, emphasizing reproducible tuning and clear visualization.",
+      "Focused on understanding algorithmic trade-offs and learning dynamics rather than optimizing for a single score.",
     visuals: [
       // Add once you place images in public/images/iadm-reinforcement-learning-comparison/
       // { label: "Learning curve (SARSA)", src: "/images/iadm-reinforcement-learning-comparison/sarsa.png", alt: "SARSA learning curve" },
